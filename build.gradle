@@ -45,5 +45,5 @@ jar {
 task runWeb(type: JavaExec, dependsOn: 'build') {
 	main = 'com.example.deployment.DeploymentApplication'
 	classpath = sourceSets.main.runtimeClasspath
-	args = ['-Dserver.port=\' + System.getenv(\'PORT\')']
+	args = ['-Dserver.port=' + System.getenv('PORT')]
 }
